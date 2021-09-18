@@ -57,7 +57,7 @@ export default function Home() {
             data-aos="fade-right"
           >
             츄메
-            <span className="text-2xl">ちゅめ</span>
+            <span className="text-2xl">チュメ</span>
           </h1>
         </div>
         <div>
