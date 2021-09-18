@@ -139,11 +139,7 @@ export default function Home() {
               에라이한 태그들
             </h2>
           </div>
-          <p
-            className="text-right text-2xl text-red-900"
-            data-aos="fade-right"
-            data-aos="fade-right"
-          >
+          <p className="text-right text-2xl text-red-900" data-aos="fade-right">
             Live #Chume_Live
             <br /> Fan Art #Chume_Art <br />
             Sensitive #Bitchume
