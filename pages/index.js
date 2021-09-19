@@ -29,7 +29,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main className="m-auto flex flex-col gap-20 relative overflow-visible p-3">
+      <main className="m-auto flex flex-col gap-20 relative overflow-visible w-full p-3">
         <div className="flex flex-col gap-3">
           <div className={styles.profile}>
             <video muted autoPlay loop className="relative z-20">
@@ -128,6 +128,7 @@ export default function Home() {
             data-aos="fade-right"
           >
             @succuvus_chume
+            <p className="text-xl">보러가기</p>
           </a>
         </div>
         <div className="flex flex-col gap-3">
@@ -162,6 +163,7 @@ export default function Home() {
             data-aos="fade-right"
           >
             츄메 チュメ Chume CH.
+            <p className="text-xl">보러가기</p>
           </a>
         </div>
         <div className="flex flex-col gap-3">
