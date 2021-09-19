@@ -37,3 +37,7 @@ p {
   /* font-family: "Gamja Flower", cursive; */
   font-family: "S-CoreDream-2ExtraLight";
 }
+
+.simplebar-scrollbar::before {
+  background-color: #ff0062 !important;
+}
