@@ -41,3 +41,11 @@ p {
 .simplebar-scrollbar::before {
   background-color: #ff0062 !important;
 }
+
+h1,
+h2,
+p,
+img {
+  user-select: none;
+  pointer-events: none;
+}

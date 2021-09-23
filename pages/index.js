@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import SimpleBar from "simplebar-react";
 import "simplebar/dist/simplebar.min.css";
+import Image from "next/image";
 
 export default function Home() {
   const [host, setHost] = useState("");
@@ -44,9 +45,13 @@ export default function Home() {
           <div className="p-3 overflow-x-hidden flex flex-col gap-20 relative">
             <div className="flex flex-col gap-3">
               <div className={styles.profile}>
-                <video muted autoPlay loop className="relative z-20">
+                {/* <video muted autoPlay loop className="relative z-20">
                   <source src="/sL0z7TSX5os.webm" />
-                </video>
+                </video> */}
+                <img
+                  src="/chume_opt.png"
+                  className="relative z-20 transform scale-100 ml-auto mr-auto mt-2 mb-2"
+                />
                 <div className="text-pink-900 text-6xl z-10" id="tx_chume">
                   {[...Array(15)].map((x, i) => (
                     <h1 key={i} style={{ opacity: 0 }}>
@@ -145,7 +150,7 @@ export default function Home() {
                 className="text-3xl text-right text-red-900"
                 data-aos="fade-right"
               >
-                @succuvus_chume
+                <p>@succuvus_chume</p>
                 <p className="text-xl">보러가기</p>
               </a>
             </div>
@@ -183,7 +188,7 @@ export default function Home() {
                 className="text-3xl text-right text-red-900"
                 data-aos="fade-right"
               >
-                츄메 チュメ Chume CH.
+                <p>츄메 チュメ Chume CH.</p>
                 <p className="text-xl">보러가기</p>
               </a>
             </div>
