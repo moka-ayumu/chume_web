@@ -229,8 +229,10 @@ function Minigame() {
           document.getElementById("minigame_root").style.paddingTop = "12px";
           document.getElementById("minigame_root").style.paddingLeft = "8px";
           document.getElementById("minigame_root").style.paddingRight = "8px";
-          document.getElementById("minigame_result_img").style.marginBottom =
-            "-28px";
+          if (document.getElementById("minigame_result_img") != null) {
+            document.getElementById("minigame_result_img").style.marginBottom =
+              "-28px";
+          }
           html2canvas(document.getElementById("minigame_root"), {
             backgroundColor: "#ffd190",
             width: `${e.target.getBoundingClientRect().width + 20}`,
@@ -243,8 +245,11 @@ function Minigame() {
             document.getElementById("minigame_root").style.paddingTop = "";
             document.getElementById("minigame_root").style.paddingLeft = "";
             document.getElementById("minigame_root").style.paddingRight = "";
-            document.getElementById("minigame_result_img").style.marginBottom =
-              "";
+            if (document.getElementById("minigame_result_img") != null) {
+              document.getElementById(
+                "minigame_result_img"
+              ).style.marginBottom = "";
+            }
             e.target.style.opacity = "1";
           });
         }}

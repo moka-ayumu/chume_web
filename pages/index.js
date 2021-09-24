@@ -32,7 +32,18 @@ export default function Home() {
     <div className={styles.root}>
       <Head>
         <title>CHUME</title>
-        <meta name="description" content="CHUME" />
+        <meta
+          name="description"
+          content="서큐버스 츄메에 대해 자세히 알아보세요!"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@succuVus_chume" />
+        <meta property="og:title" content="CHUME" />
+        <meta
+          property="og:description"
+          content="서큐버스 츄메에 대해 자세히 알아보세요!"
+        />
+        <meta property="og:image" content="https://chume.moe/thumb.png" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
