@@ -221,43 +221,49 @@ function Minigame() {
           )}
         </div>
       </div>
-      <a
-        onClick={(e) => {
-          console.log("asd");
-          e.target.style.opacity = "0";
-          document.getElementById("minigame_root").style.width = "110%";
-          document.getElementById("minigame_root").style.paddingTop = "12px";
-          document.getElementById("minigame_root").style.paddingLeft = "8px";
-          document.getElementById("minigame_root").style.paddingRight = "8px";
-          if (document.getElementById("minigame_result_img") != null) {
-            document.getElementById("minigame_result_img").style.marginBottom =
-              "-28px";
-          }
-          html2canvas(document.getElementById("minigame_root"), {
-            backgroundColor: "#ffd190",
-            width: `${e.target.getBoundingClientRect().width + 20}`,
-          }).then((canvas) => {
-            let link = document.createElement("a");
-            link.download = "ㅋㅅㅂㅊ.png";
-            link.href = canvas.toDataURL();
-            link.click();
-            document.getElementById("minigame_root").style.width = "";
-            document.getElementById("minigame_root").style.paddingTop = "";
-            document.getElementById("minigame_root").style.paddingLeft = "";
-            document.getElementById("minigame_root").style.paddingRight = "";
+      {end && name != "" ? (
+        <a
+          onClick={(e) => {
+            console.log("asd");
+            e.target.style.opacity = "0";
+            document.getElementById("minigame_root").style.width = "110%";
+            document.getElementById("minigame_root").style.paddingTop = "12px";
+            document.getElementById("minigame_root").style.paddingLeft = "8px";
+            document.getElementById("minigame_root").style.paddingRight = "8px";
             if (document.getElementById("minigame_result_img") != null) {
               document.getElementById(
                 "minigame_result_img"
-              ).style.marginBottom = "";
+              ).style.marginBottom = "-28px";
             }
-            e.target.style.opacity = "1";
-          });
-        }}
-      >
-        <p className="text-right mt-3 text-lg text-red-900">
-          사진으로 저장하기 (테스트)
-        </p>
-      </a>
+            html2canvas(document.getElementById("minigame_root"), {
+              backgroundColor: "#ffd190",
+              width: `${e.target.getBoundingClientRect().width + 20}`,
+            }).then((canvas) => {
+              let link = document.createElement("a");
+              link.download = "ㅋㅅㅂㅊ.png";
+              link.href = canvas.toDataURL();
+              link.click();
+              document.getElementById("minigame_root").style.width = "";
+              document.getElementById("minigame_root").style.paddingTop = "";
+              document.getElementById("minigame_root").style.paddingLeft = "";
+              document.getElementById("minigame_root").style.paddingRight = "";
+              if (document.getElementById("minigame_result_img") != null) {
+                document.getElementById(
+                  "minigame_result_img"
+                ).style.marginBottom = "";
+              }
+              e.target.style.opacity = "1";
+            });
+          }}
+        >
+          <p className="text-right mt-3 text-lg text-red-900">
+            (베타) 사진으로 저장하기
+          </p>
+        </a>
+      ) : (
+        <div />
+      )}
+
       {end ? (
         <div
           className="absolute bg-red-300 p-5 w-11/12 rounded-2xl text-red-900"
