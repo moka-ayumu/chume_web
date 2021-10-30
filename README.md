@@ -6,7 +6,7 @@
 </p>
 
 ## Description
-Self-introduction site for virtual streamer 'Chume' 
+Self-introduction site based on 'Next.js' of virtual streamer 'Chume'
 
 ## Function (To Do)
 - [x] 'CHUME' text cascading animation
